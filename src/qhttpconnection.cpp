@@ -73,8 +73,8 @@ QHttpConnection::~QHttpConnection()
 void QHttpConnection::socketDisconnected()
 {
     invalidateRequest();
-	m_socket->deleteLater();
-	deleteLater();
+    m_socket->deleteLater();
+    deleteLater();
 }
 
 void QHttpConnection::invalidateRequest()
